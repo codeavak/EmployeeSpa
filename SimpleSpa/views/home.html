@@ -1,0 +1,19 @@
+﻿<div class="row jumbotron">
+    <h1>Home View</h1>
+    <!--<pre>{{$ctrl|json}}</pre>-->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th ng-repeat="key in $ctrl.keys">{{key}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="employee in $ctrl.employees">
+                <td ng-repeat="property in employee">{{property}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+</div>
